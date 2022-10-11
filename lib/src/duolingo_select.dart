@@ -10,11 +10,11 @@ class DuolingoSelectStyleClone extends StatefulWidget {
   const DuolingoSelectStyleClone({super.key});
 
   @override
-  State<DuolingoSelectStyleClone> createState() => _DuolingoSelectStyleCloneState();
+  State<DuolingoSelectStyleClone> createState() =>
+      _DuolingoSelectStyleCloneState();
 }
 
 class _DuolingoSelectStyleCloneState extends State<DuolingoSelectStyleClone> {
-
   late FocusNode scienceNode;
   late FocusNode theNode;
 
@@ -181,6 +181,7 @@ class _DuolingoSelectStyleCloneState extends State<DuolingoSelectStyleClone> {
               const SizedBox(height: 60),
               ElevatedButton(
                 onPressed: () {
+                  /// RESET THE SCREEN
                   Navigator.pushAndRemoveUntil(
                     context,
                     MaterialPageRoute(
